@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title> Weather App</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="weather-card">
+
+      <div class="top">
+        <h1>Weather App</h1>
+
+        <div class="search-box">
+          <input type="text" placeholder="Search city..." id="cityInput">
+          <button id="searchBtn">Search</button>
+        </div>
+      </div>
+
+      <div class="weather-body">
+
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/1163/1163661.png"
+          class="weather-icon"
+          id="weatherIcon"
+        >
+
+        <h2 id="temp"></h2>
+        <h3 id="city"></h3>
+        <p id="condition"></p>
+
+        <div class="details">
+
+          <div class="box">
+            <h4>Humidity</h4>
+            <p id="humidity">65%</p>
+          </div>
+
+          <div class="box">
+            <h4>Wind</h4>
+            <p id="wind">12 km/h</p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
